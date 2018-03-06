@@ -1,0 +1,11 @@
+fred: I said something
+bob: Oh I see
+(10:30:28) fred: I said something
+(10:30:29) bob: Oh I see
+fred: Ah, the text was repeated
+bob: yes it was
+(Wed 26 10:30:28) bob: Hello Fred!
+(Wed 26 10:30:28) fred: I said something
+(Wed 26 10:30:29) bob: Oh I see
+(Wed 26 10:31:20) fred: Ah, the text was repeated
+(Wed 26 10:31:24) bob: yes it was
