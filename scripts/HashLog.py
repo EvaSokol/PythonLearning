@@ -8,11 +8,12 @@ def read_log_file(old_log_file_path):
     hash_set = set()
     with open(old_log_file_path) as file:
         for line in file:
+            temp_line = ""
             if line[0] == '(':
                 ind = line.find(')')
-                line = line[ind + 2:]
+                temp_line = line[ind + 2:]
             hash_keeper = hashlib.md5()
-            hash_keeper.update(line.encode('utf-8', 'strict'))
+            hash_keeper.update(temp_line.encode('utf-8', 'strict'))
             current_digest = hash_keeper.digest()
             if current_digest not in hash_set:
                 hash_set.add(current_digest)
